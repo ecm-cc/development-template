@@ -14,7 +14,8 @@ locals {
     "a_prod" = "1"
     "b_dev"  = "$LATEST"
     "c_qas" = "1"
-  }
+    "d_version" = "1"
+}
 
   // to avoid unnecessary lambda function deployments the build version env var is only changed if the lambda function code has been changed
   build_version = "${local.source_code_hash != data.terraform_remote_state.app.source_code_hash ? var.build_version : data.terraform_remote_state.app.build_version}"

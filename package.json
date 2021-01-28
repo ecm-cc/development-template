@@ -8,7 +8,7 @@
     "deploy": "echo Running ESLint ... && npx eslint **/*.js && echo done && docker-build deploy"
   },
   "dependencies": {
-    "@ablegroup/requestid": "^1.0.0",
+    "@ablegroup/requestid": "^1.0.2",
     "@ablegroup/tenant": "^1.0.0",
     "aws-serverless-express": "^3.4.0",
     "cookie-parser": "^1.4.5",
